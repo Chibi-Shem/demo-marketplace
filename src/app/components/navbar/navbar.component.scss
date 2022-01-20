@@ -1,0 +1,16 @@
+a {
+  color: white;
+}
+a:active {
+  color: #f8951d;
+}
+a:hover {
+  color: #f8951d;
+}
+a:focus {
+  color: #f8951d;
+}
+
+.nav-link.active {
+  background-color: #f8951d;
+}

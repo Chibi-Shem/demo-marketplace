@@ -1,0 +1,42 @@
+.item-grid-container {
+  padding: 20px 10%;
+  padding-bottom: 10%;
+}
+
+.item-grid-title {
+  color: #f8951d;
+  font-size: 30px;
+  padding: 5px 20px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #64636b;
+}
+
+.item-grid {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: left;
+}
+
+.item-grid-item-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0px;
+}
+
+.filter-btn {
+  width: 30%;
+  align-self: end;
+  padding: 10px;
+  background-color: #f8951d;
+  color: white;
+}
+
+.nav-link.active {
+  background-color: #f8951d;
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}

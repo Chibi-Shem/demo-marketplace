@@ -1,0 +1,23 @@
+<div class="item-detail-container">
+  <div class="d-flex flex-column">
+    <div class="d-flex flex-row">
+      <div class="item-detail-image"></div>
+      <div class="item-detail-title">
+        <strong class="font-title"
+          ><b>{{ item.title }}</b></strong
+        >
+        <strong class="font-titlewhite"
+          ><b>OWNER: {{ item.seller }}</b></strong
+        >
+        <strong class="font-title-small"
+          ><b>${{ item.price }}</b></strong
+        >
+      </div>
+    </div>
+    <div class="row item-detail-mid">
+      <strong class="font-title-small"><b>DESCRIPTION:</b></strong>
+      <p class="font-desc">{{ item.description }}</p>
+    </div>
+  </div>
+  <button class="edit-btn btn" (click)="editItem()"><b>EDIT</b></button>
+</div>

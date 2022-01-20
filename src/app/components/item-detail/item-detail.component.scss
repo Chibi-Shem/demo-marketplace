@@ -1,0 +1,55 @@
+.item-detail-container {
+  justify-content: center;
+  padding: 70px 300px;
+}
+
+.item-detail-mid {
+  height: 42%;
+  flex-direction: column;
+  width: 90%;
+  padding-top: 20px;
+}
+
+.item-detail-image {
+  background-image: url("^assets/img/favicon.png");
+  width: 160px;
+  height: 224px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+  margin-right: 50px;
+}
+
+.item-detail-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.font-title {
+  font-size: 45px;
+  color: #f8951d;
+  line-height: 40px;
+}
+
+.font-title-small {
+  font-size: 23px;
+  color: #f8951d;
+}
+
+.font-titlewhite {
+  font-size: 20px;
+  color: white;
+}
+
+.font-desc {
+  font-size: 15px;
+  color: white;
+}
+
+.edit-btn {
+  width: 30%;
+  align-self: end;
+  padding: 10px;
+  background-color: #f8951d;
+  color: white;
+}

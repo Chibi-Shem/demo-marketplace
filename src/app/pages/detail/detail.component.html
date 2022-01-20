@@ -1,0 +1,10 @@
+<app-item-form
+  [item]="item"
+  [mode]="'edit'"
+  *ngIf="isEditMode"
+  (toggleEditItem)="toggleEditItem($event)"
+></app-item-form>
+<app-item-detail
+  (toggleEditItem)="toggleEditItem($event)"
+  *ngIf="!isEditMode"
+></app-item-detail>

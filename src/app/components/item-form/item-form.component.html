@@ -1,0 +1,55 @@
+<div class="d-flex item-detail-container justify-content-center">
+  <div class="d-flex flex-column w-75">
+    <form [formGroup]="itemForm">
+      <div class="row d-flex flex-row justify-content-between">
+        <div
+          class="item-detail-image col-4"
+          style="background-image: url('{{ itemImage }}');"
+        ></div>
+        <div class="item-detail-title col-7">
+          <div class="d-flex">
+            <strong class="font-title"><b>NAME:</b></strong>
+            <input
+              class="form-control"
+              id="itemTitle"
+              formControlName="title"
+            />
+          </div>
+          <div class="d-flex">
+            <strong class="font-titlewhite"><b>OWNER:</b></strong>
+            <input
+              class="form-control"
+              id="itemOwner"
+              formControlName="seller"
+            />
+          </div>
+          <div class="d-flex">
+            <strong class="font-title-small"><b>PRICE:</b></strong>
+            <input
+              class="form-control"
+              id="itemPrice"
+              formControlName="price"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row item-detail-mid">
+        <strong class="font-title-small"><b>DESCRIPTION:</b></strong>
+        <textarea
+          class="form-control"
+          id="itemDescription"
+          rows="3"
+          formControlName="description"
+        ></textarea>
+        <div class="form-btn-group">
+          <button class="form-btn btn" (click)="onSubmit()">
+            <b>{{ mode == "edit" ? "UPDATE" : "CREATE" }} COLLECTIBLE</b>
+          </button>
+          <button class="form-btn btn" (click)="cancelEdit()">
+            <b>CANCEL</b>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

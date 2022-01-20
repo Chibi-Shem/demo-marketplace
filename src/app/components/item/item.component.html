@@ -1,0 +1,38 @@
+<div class="item-container">
+  <div [routerLink]="['/card', item.id]">
+    <div class="item-image-border">
+      <div
+        class="item-image"
+        style="background-image: url('{{ item.image }}');"
+      ></div>
+    </div>
+    <div class="item-content">
+      <div class="item-text">
+        <br />
+        <h2>
+          <strong
+            ><b>{{ item.title }}</b></strong
+          >
+        </h2>
+        <p>
+          {{
+            item.description.length > 80
+              ? (item.description | slice: 0:80) + "..."
+              : item.description
+          }}
+        </p>
+        <h3>
+          <strong *ngIf="item.price != 0"
+            ><b>${{ item.price }}</b></strong
+          >
+        </h3>
+        <br />
+      </div>
+    </div>
+  </div>
+  <button
+    class="item-button"
+    (click)="updateSold(item.id)"
+    *ngIf="item.price != 0"
+  ></button>
+</div>
